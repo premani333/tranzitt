@@ -1,0 +1,28 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right:2px;
+}
+.logo{
+    font-size: 35px;
+    color: black;
+}
+
+.formgroup{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+}
+.headercontainer{
+      background-color: ghostwhite;
+      width:fit-content;
+      height: 30px;
+      text-align: justify;
+}
+ .bodycontainer{
+    
+    background-color:lightskyblue;
+    width: 100%;
+    padding-right: 550px;
+    
+} 

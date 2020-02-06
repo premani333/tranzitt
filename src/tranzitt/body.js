@@ -1,0 +1,121 @@
+import React from "react";
+import "./Tranzitt.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+    Container,Card,  CardBody,Label,Input,FormGroup, Col,Row,Button, 
+     } from 'reactstrap';
+     import BootstrapSwitchButton from 'bootstrap-switch-button-react';
+ 
+
+
+class body extends React.Component{
+    render(){
+           return(
+            <div >       
+            <Card > 
+            <Container> 
+            <CardBody style={{ width: '40rem' }}> 
+            
+            <h2><b>Welcome to Tranzitt</b></h2> 
+            <h5>Be happy,Ride happy, Pay happy</h5>
+            <br/><br/>
+            <Col md={9}>
+              <Row form >
+                 <Col  md={10}>
+                    <FormGroup row>                  
+                       <Label>Pickup</Label>
+                         <Input 
+                           type="text"/>              
+                    </FormGroup>
+                  </Col>
+              </Row>
+              <Row form>
+                 <Col md={10}>
+                  <FormGroup row>
+                     <Label>Drop</Label>    
+                       <Input 
+                         type="text"/>              
+                  </FormGroup>
+                 </Col>
+              </Row>
+              <br/><br/>
+              <div className="row">
+                <Col md={4}>
+                  <div className="formgroup">
+                    <Label>Date</Label>
+                       <Input 
+                         type="date"/>
+                  </div>
+                </Col>
+                <Col md={2}> 
+                  <FormGroup row>
+                    <Label>Time</Label>
+                      <Input 
+                        type="time"/>
+                  </FormGroup>
+                </Col>
+                <Col md={2}>
+                    <Label>Passenger</Label>
+                    <Input type="select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    </Input>
+                </Col>
+                <Col md={2}>
+                    <Label>Luggage</Label>
+                    <Input
+                    type="select">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    </Input>
+                </Col>
+                </div><br/>
+                <div className="row">
+                <Col md={4}>
+                    <Label></Label>
+                    <div className="formgroup">
+                <Input 
+                type="date"/>
+                </div>
+                </Col>
+                <Col md={2}>
+                    <Label></Label>
+                    <FormGroup row>
+                        <Input
+                        type="time"/>
+                    </FormGroup>
+                </Col>
+                <Col md={2}>
+                    <Label></Label>
+                    <FormGroup row>
+                    
+                    </FormGroup>
+                </Col>
+                <Col md={2}>
+                    <FormGroup row>
+                        <Label>Return?</Label>
+                    <BootstrapSwitchButton onlabel="Yes" offlabel="No" size="xs" checked={false}/>
+                    </FormGroup>
+                </Col>
+                </div><br/>
+                <Col xs="6" sm="4">
+                <Button type="button" color="warning">Search</Button>
+                </Col>
+               </Col> 
+              </CardBody>
+              </Container>
+            </Card>
+            
+            </div>
+        )
+    }
+}
+export default body;
