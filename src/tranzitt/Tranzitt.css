@@ -6,6 +6,8 @@
 .logo{
     font-size: 35px;
     color: black;
+    padding-left: 16px;
+
 }
 
 .formgroup{
@@ -13,16 +15,27 @@
     flex-wrap: wrap;
     margin-left: -15px;
 }
-.headercontainer{
-      background-color: ghostwhite;
-      width:fit-content;
-      height: 30px;
-      text-align: justify;
+.header-container{
+      background-color:whitesmoke;
+      width:100%;
+      height: auto;
+}  
+.header-content{
+    align-self: flex-end;
+    color: black;
+    padding-right: 140px;
 }
- .bodycontainer{
-    
-    background-color:lightskyblue;
-    width: 100%;
-    padding-right: 550px;
-    
-} 
+ .search-button{
+    width: 200px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    height: 35px;
+    font-size: 15px;
+    text-align: center;
+ }
+ .body-container{
+     font-size: small;
+     font-style: serif;
+ }

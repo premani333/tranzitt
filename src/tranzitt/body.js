@@ -11,10 +11,11 @@ import {
 class body extends React.Component{
     render(){
            return(
-            <div >       
+            <div className="body-container">       
             <Card > 
             <Container> 
-            <CardBody style={{ width: '40rem' }}> 
+              
+            <CardBody style={{ width: '46rem' }}> 
             
             <h2><b>Welcome to Tranzitt</b></h2> 
             <h5>Be happy,Ride happy, Pay happy</h5>
@@ -106,11 +107,12 @@ class body extends React.Component{
                     </FormGroup>
                 </Col>
                 </div><br/>
-                <Col xs="6" sm="4">
-                <Button type="button" color="warning">Search</Button>
+                <Col sm="12" md={{ size: 3, offset: 5 }}>
+                <button type="button"className="search-button">Search</button>
                 </Col>
                </Col> 
               </CardBody>
+             
               </Container>
             </Card>
             
