@@ -6,7 +6,7 @@ import {
     Link,
     Route
 } from 'react-router-dom';
-import { Container, Row, Col,Navbar,NavItem,Nav} from 'reactstrap';
+import { Container, Row, Col,} from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

@@ -2,10 +2,10 @@ import React from "react";
 import "./Tranzitt.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-    Container,Card,  CardBody,Label,Input,FormGroup, Col,Row,Button, 
+    Container,Card,  CardBody,Label,Input,FormGroup, Col,Row ,Img
      } from 'reactstrap';
      import BootstrapSwitchButton from 'bootstrap-switch-button-react';
- 
+   import Pic from "../image/HPMAW1.jpg";
 
 
 class body extends React.Component{
@@ -14,7 +14,8 @@ class body extends React.Component{
             <div className="body-container">       
             <Card > 
             <Container> 
-              
+              <Row>  
+                <Col md={5}>            
             <CardBody style={{ width: '46rem' }}> 
             
             <h2><b>Welcome to Tranzitt</b></h2> 
@@ -67,7 +68,7 @@ class body extends React.Component{
                     </Input>
                 </Col>
                 <Col md={2}>
-                    <Label>Luggage</Label>
+                    <Label>Luggagee</Label>
                     <Input
                     type="select">
                     <option>1</option>
@@ -108,14 +109,21 @@ class body extends React.Component{
                 </Col>
                 </div><br/>
                 <Col sm="12" md={{ size: 3, offset: 5 }}>
+                 
                 <button type="button"className="search-button">Search</button>
+                
                 </Col>
                </Col> 
               </CardBody>
+              </Col>
+              <Col md={7}>
+              <img  className="image-container" src={Pic} />
+              </Col>
              
+              </Row>
+
               </Container>
             </Card>
-            
             </div>
         )
     }
