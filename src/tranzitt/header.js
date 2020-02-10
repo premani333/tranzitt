@@ -20,17 +20,11 @@ class homepage extends React.Component{
                    <Col xs="3" md="4">  
                    <div className="logo" >
                   <Link to="/">Tranzitt</Link></div>
-                  </Col>
-                   <div className="header-content">
-                  <Link to="/popular-transfers">Popular transfers</Link></div>  
-                  <div className="header-content">
-                  <Link to="/Tranzitt- for- business">Tranzitt for business</Link></div>
-                  <div className="header-content">
-                  <Link to="/drive-with-tranzitt">Drive with tranzitt</Link>
-                  </div>
-                  <div className="header-content">
-                  <Link to="/login-or-signup" className="loginbutton">Login/Signup</Link>
-                  </div>
+                  </Col> 
+                  <Link to="/popular-transfers" className="header-content">Popular transfers</Link>
+                  <Link to="/Tranzitt- for- business" className="header-content"> Tranzitt for business</Link>  
+                  <Link to="/drive-with-tranzitt" className="header-content">Drive with tranzitt</Link>  
+                  <Link to="/login-or-signup" className="login">Login/Signup</Link>  
                    </Row>  
                 </Container> 
                 <Switch>

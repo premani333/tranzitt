@@ -27,7 +27,7 @@
 }
  .search-button{
     width: 200px;
-    background-color: gold;
+    background-color: #ECB400;
     color: black;
     border: none;
     border-radius: 2px;
@@ -35,13 +35,15 @@
     font-size: 15px;
     text-align: center;
  }
- .loginbutton{
-   
+ .login{
+    align-self: flex-end;
     background-color:black;
     color:white;
     border-radius: 2px;
     border: none;
-    padding: 13px;
+    width: 150px;
+    height: 35px;
+    padding: 8px;
     font-size: 14px;
     text-align: center;
  }
