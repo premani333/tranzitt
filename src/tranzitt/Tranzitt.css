@@ -23,7 +23,7 @@
 .header-content{
     align-self: flex-end;
     color: black;
-    padding-right: 65px;
+    padding-right: 60px;
 }
  .search-button{
     width: 200px;
@@ -39,9 +39,10 @@
    
     background-color:black;
     color:white;
+    border-radius: 2px;
     border: none;
-    height: 50px;
-    font-size: 17px;
+    padding: 13px;
+    font-size: 14px;
     text-align: center;
  }
  .body-container{
