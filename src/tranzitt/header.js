@@ -24,11 +24,12 @@ class homepage extends React.Component{
                    <div className="header-content">
                   <Link to="/popular-transfers">Popular transfers</Link></div>  
                   <div className="header-content">
+                  <Link to="/Tranzitt- for- business">Tranzitt for business</Link></div>
+                  <div className="header-content">
                   <Link to="/drive-with-tranzitt">Drive with tranzitt</Link>
                   </div>
                   <div className="header-content">
-                     
-                  <Link to="/login-or-signup">Login/Signup</Link>
+                  <Link to="/login-or-signup" className="loginbutton">Login/Signup</Link>
                   </div>
                    </Row>  
                 </Container> 

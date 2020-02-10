@@ -2,7 +2,8 @@ import React from "react";
 import "./Tranzitt.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-    Container,Card,  CardBody,Label,Input,FormGroup, Col,Row ,Img
+    Container,Card,  CardBody,Label,Input,FormGroup, Col,Row ,Carousel,CarouselItem
+
      } from 'reactstrap';
      import BootstrapSwitchButton from 'bootstrap-switch-button-react';
    import Pic from "../image/HPMAW1.jpg";
@@ -116,10 +117,10 @@ class body extends React.Component{
                </Col> 
               </CardBody>
               </Col>
-              <Col md={7}>
+              
+              <Col md={7}> 
               <img  className="image-container" src={Pic} />
-              </Col>
-             
+               </Col>            
               </Row>
 
               </Container>

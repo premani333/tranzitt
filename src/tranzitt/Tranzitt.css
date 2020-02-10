@@ -23,7 +23,7 @@
 .header-content{
     align-self: flex-end;
     color: black;
-    padding-right: 140px;
+    padding-right: 65px;
 }
  .search-button{
     width: 200px;
@@ -35,6 +35,15 @@
     font-size: 15px;
     text-align: center;
  }
+ .loginbutton{
+   
+    background-color:black;
+    color:white;
+    border: none;
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+ }
  .body-container{
      font-size: small;
      font-style: serif;
@@ -43,6 +52,4 @@
      height: 550px;
      width: 700px;
      padding-left: 150px;
-     
-
  }
