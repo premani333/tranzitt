@@ -2,9 +2,7 @@ import React from "react";
 import "./Tranzitt.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-    Container,Card,  CardBody,Label,Input,FormGroup, Col,Row ,Carousel,CarouselItem
-
-     } from 'reactstrap';
+    Container,Card,  CardBody,Label,Input,FormGroup, Col,Row } from 'reactstrap';
      import BootstrapSwitchButton from 'bootstrap-switch-button-react';
    import Pic from "../image/HPMAW1.jpg";
 
@@ -28,7 +26,9 @@ class body extends React.Component{
                     <FormGroup row>                  
                        <Label>Pickup</Label>
                          <Input 
-                           type="text"/>              
+                           type="text"
+                           className="input"
+                           />              
                     </FormGroup>
                   </Col>
               </Row>
@@ -112,19 +112,17 @@ class body extends React.Component{
                 <Col sm="12" md={{ size: 3, offset: 5 }}>
                  
                 <button type="button"className="search-button">Search</button>
-                
                 </Col>
                </Col> 
               </CardBody>
               </Col>
-              
-              <Col md={7}> 
+              <Col md={7}>
               <img  className="image-container" src={Pic} />
-               </Col>            
+              </Col>            
               </Row>
-
               </Container>
             </Card>
+
             </div>
         )
     }

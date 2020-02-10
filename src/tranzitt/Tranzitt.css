@@ -48,11 +48,14 @@
     text-align: center;
  }
  .body-container{
-     font-size: small;
-     font-style: serif;
+     font-size: small;    
+
  }
  .image-container{
-     height: 550px;
-     width: 700px;
-     padding-left: 150px;
+     height: 524px;
+     width: 609px;
+     padding-left: 50px;
  }
+.input{
+    background-color: #F6F6;
+}
