@@ -5,7 +5,7 @@ import Body from "./tranzitt/body"
 
 function App() {
   return (
-    <div>
+    <div >
       <Header /><br/>
       <Body/>
     </div>

@@ -5,25 +5,26 @@
 }
 .logo{
     font-size: 35px;
-    color: black;
-    padding-left: 16px;
+    color:black;
+    padding-left: 10px;
+    font-style: italic;
 
 }
 
 .formgroup{
-    display: flex;
+    display: inherit;
     flex-wrap: wrap;
     margin-left: -15px;
 }
 .header-container{
-      background-color:whitesmoke;
-      width:100%;
-      height: auto;
+      box-shadow: 1px 2px 2px 1px #ccc;
 }  
 .header-content{
-    align-self: flex-end;
+    align-self: center;
     color: black;
     padding-right: 60px;
+    
+
 }
  .search-button{
     width: 200px;
@@ -36,7 +37,7 @@
     text-align: center;
  }
  .login{
-    align-self: flex-end;
+    align-self: center;
     background-color:black;
     color:white;
     border-radius: 2px;
@@ -52,10 +53,21 @@
 
  }
  .image-container{
-     height: 524px;
      width: 609px;
-     padding-left: 50px;
  }
 .input{
     background-color: #F6F6;
+}
+a:link {
+    color:black;
+    background-color: none;
+    text-decoration: none;
+}
+  a:hover {
+    color: #ECB400 !important;
+    text-decoration: none !important; 
+   
+}
+.homepage{
+    background-color: #F1F3FB;
 }

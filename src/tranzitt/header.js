@@ -14,12 +14,11 @@ class homepage extends React.Component{
     render(){
         return(
           <Router>
-               <div className="headercontainer"> 
+               <div className="header-container"> 
                <Container>    
                <Row>
-                   <Col xs="3" md="4">  
-                   <div className="logo" >
-                  <Link to="/">Tranzitt</Link></div>
+                   <Col xs="3" md="4"> 
+                  <Link to="/" div className="logo" >Tranzitt</Link>
                   </Col> 
                   <Link to="/popular-transfers" className="header-content">Popular transfers</Link>
                   <Link to="/Tranzitt- for- business" className="header-content"> Tranzitt for business</Link>  
