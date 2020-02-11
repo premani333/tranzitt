@@ -1,7 +1,7 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-right:2px;
+    
 }
 .logo{
     font-size: 35px;
@@ -12,9 +12,9 @@
 }
 
 .formgroup{
-    display: inherit;
-    flex-wrap: wrap;
-    margin-left: -15px;
+    /* display: inherit;
+    flex-wrap: wrap; */
+    margin-left: -18px;
 }
 .header-container{
       box-shadow: 1px 2px 2px 1px #ccc;
@@ -22,14 +22,12 @@
 .header-content{
     align-self: center;
     color: black;
-    padding-right: 60px;
-    
-
+    padding-right: 70px;   
 }
  .search-button{
     width: 200px;
     background-color: #ECB400;
-    color: black;
+    color: white;
     border: none;
     border-radius: 2px;
     height: 35px;
@@ -49,15 +47,26 @@
     text-align: center;
  }
  .body-container{
-     font-size: small;    
+     font-size: small; 
+    
 
  }
  .image-container{
-     width: 609px;
+      width: 645px;
  }
-.input{
-    background-color: #F6F6;
+.input-fields{
+    background-color: #F6F6F6 !important;
+    border-radius: none !important;
+    
 }
+.input-fields img { 
+    position: absolute;
+    width: 20px;  
+    padding-top: 11px;
+    padding-left: 5px;
+} 
+ 
+
 a:link {
     color:black;
     background-color: none;
@@ -66,8 +75,16 @@ a:link {
   a:hover {
     color: #ECB400 !important;
     text-decoration: none !important; 
-   
+
 }
 .homepage{
     background-color: #F1F3FB;
+}
+.location-change{
+    position: absolute;
+    margin-left: 495px;
+    box-shadow: 0px 3px 3px 0px #ccc;
+    background-color: #FFFFFF;
+    border: none;
+   padding: 5px;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Tranzitt.css";
 import {
     BrowserRouter as Router,
@@ -7,7 +8,6 @@ import {
     Route
 } from 'react-router-dom';
 import { Container, Row, Col,} from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class homepage extends React.Component{
