@@ -1,23 +1,24 @@
+
 .row{
     display: flex;
     flex-wrap: wrap;
-    
 }
 .logo{
     font-size: 35px;
-    color:black;
+    color:#ECB400;
     padding-left: 10px;
     font-style: italic;
-
+   
 }
 
 .formgroup{
-    /* display: inherit;
-    flex-wrap: wrap; */
-    margin-left: -18px;
+  
+    margin-left: -15px;
 }
 .header-container{
+    width: auto;
       box-shadow: 1px 2px 2px 1px #ccc;
+    
 }  
 .header-content{
     align-self: center;
@@ -25,7 +26,7 @@
     padding-right: 70px;   
 }
  .search-button{
-    width: 200px;
+    width: 180px;
     background-color: #ECB400;
     color: white;
     border: none;
@@ -35,6 +36,7 @@
     text-align: center;
  }
  .login{
+     
     align-self: center;
     background-color:black;
     color:white;
@@ -48,24 +50,23 @@
  }
  .body-container{
      font-size: small; 
-    
-
  }
  .image-container{
-      width: 645px;
+      width: 643px;
  }
+
 .input-fields{
+    width: 100%;
     background-color: #F6F6F6 !important;
-    border-radius: none !important;
     
 }
 .input-fields img { 
     position: absolute;
     width: 20px;  
     padding-top: 11px;
-    padding-left: 5px;
+    padding-left: 2px;
 } 
- 
+
 
 a:link {
     color:black;
@@ -82,9 +83,71 @@ a:link {
 }
 .location-change{
     position: absolute;
-    margin-left: 495px;
+    left: 490px;
+    width: 30px;
     box-shadow: 0px 3px 3px 0px #ccc;
     background-color: #FFFFFF;
     border: none;
-   padding: 5px;
+   padding: 3px;
+}
+button:hover{
+    font-weight: bold;
+}
+@media screen and (max-width:800px){
+    h2{
+        font-size: 25px;
+    }
+    h5{
+        font-size: small;
+    }
+    .logo{
+        text-align: center;
+        font-size: 20px;
+        color:#ECB400;    
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+            
+    }
+    .header-container{
+        width: auto;
+        box-shadow: 1px 2px 2px 1px #ccc;        
+  }  
+    .header-content{
+        align-self: right;
+        color: black;
+        padding-right: 70px; 
+    }
+    
+    .input-fields{
+        background-color: #F6F6F6 !important;
+        border-radius: none !important; 
+       
+    }
+    .search-button{
+        width: 186px;
+        background-color: #ECB400;
+        color: white;
+        border: none;
+        border-radius: 2px;
+        height: 35px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .image-container{
+        width: 340px;
+   }
+   .body-container{
+    font-size: medium; 
+}
+.location-change{
+    position: absolute;
+    left: 280px;
+    width: 30px;
+    box-shadow: 0px 3px 3px 0px #ccc;
+    background-color: #FFFFFF;
+    border: none;
+   padding: 3px;
+}
 }
