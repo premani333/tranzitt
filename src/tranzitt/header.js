@@ -1,30 +1,58 @@
 import React from "react";
+import { Container,
+    Row,
+    Col,
+  
+} from 'reactstrap';
+import {
+    Navbar,
+    Nav,
+
+} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Tranzitt.css";
+
 import {
     BrowserRouter as Router,
     Switch,
     Link,
     Route
 } from 'react-router-dom';
-import { Container, Row, Col,} from 'reactstrap';
 
+import "./Tranzitt.css";
+//import Menu from "../image/menu.svg";
 
 class homepage extends React.Component{
+   
+    
     render(){
+        
         return(
           <Router>
-               <div className="header-container"> 
+               <div > 
+               <Navbar  expand="lg">
                <Container>    
                <Row>
-                   <Col xs="3" md="4"> 
-                  <Link to="/" div className="logo" >Tranzitt</Link>
-                  </Col> 
-                  <Link to="/popular-transfers" className="header-content">Popular transfers</Link>
-                  <Link to="/Tranzitt- for- business" className="header-content"> Tranzitt for business</Link>  
-                  <Link to="/drive-with-tranzitt" className="header-content">Drive with tranzitt</Link>  
-                  <Link to="/login-or-signup" className="login">Login/Signup</Link>  
-                   </Row>  
+               <Navbar.Brand> 
+                  <Link to="/" className="logo" >Tranzitt</Link>
+                  </Navbar.Brand>
+                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                   <Navbar.Collapse id="basic-navbar-nav">
+                  <Nav className="mr-auto" >
+                  <Nav.Link>
+                  <Link to="/popular-transfers" >Popular transfers</Link>
+                  </Nav.Link>  
+                  <Nav.Link>
+                  <Link to="/Tranzitt-for-business"> Tranzitt for business</Link>  
+                  </Nav.Link>  
+                  <Nav.Link>
+                  <Link to="/drive-with-tranzitt" >Drive with tranzitt</Link>  
+                  </Nav.Link> 
+                  <Nav.Link>
+                 <Link to="/login-or-signup" className="login">Login/Signup</Link>  
+                 </Nav.Link>
+                 </Nav>
+                 </Navbar.Collapse>
+                   </Row>      
                 </Container> 
                 <Switch>
                      <Route path="/login-or-signup">
@@ -37,9 +65,9 @@ class homepage extends React.Component{
                        <Popular-transfers/>
                    </Route>
                 </Switch>
-                
-                
+                </Navbar>
                </div>
+               
          </Router>
          
         )
