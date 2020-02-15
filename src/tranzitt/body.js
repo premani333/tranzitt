@@ -13,14 +13,14 @@ import Picon from "../image/pin.svg";
 import DRicon from "../image/flags.svg";
 import Ticon from "../image/clock.svg";
 import UDicon from "../image/up-and-down-arrows.svg";
-import DNicon from "../image/down-chevron.svg";
-
-//import Media from 'react-media';
+import ModerDatepicker from "react-modern-datepicker";
 
 
 const items = [
   {
     src: Pic3,
+
+
     header: 'Flight delays? no worries',
     caption: 'We got you coverd'
   },
@@ -37,22 +37,27 @@ const items = [
 ];
 
 class body extends React.Component {
+  constructor(props) {
+    super(props);
+  this.state = {
+    startDate: new Date()
+  };
+  this.handleChange = this.handleChange.bind(this);
+}
+  handleChange = date => {
+    this.setState({
+      startDate: date
+    });
+  };
   render() {
     return (
-      <div className="body-container mt-0">
-
+      <div className="body-container mt-1">
         <Container>
           <Row>
-
-            <Col md={6} id="sdfg">
+            <Col md={6} >
               <div className="">
                 <CardBody >
                   <h2><b>Welcome to Tranzitt</b></h2>
-
-
-
-
-
                   <h5>Be happy,Ride happy, Pay happy</h5>
                   <br /><br />
                   <Col md={12}>
@@ -62,15 +67,18 @@ class body extends React.Component {
                       <Input
                         type="text"
                         className="form-control input-fields"
+                        id="input-text-align"
                       />
                     </div>
                     <Input type="image" className="location-change" src={UDicon}></Input>
+
                     <Label>Drop</Label>
                     <div className="input-fields">
                       <img src={DRicon} />
                       <Input
                         type="text"
-                        className="form-control input-fields" />
+                        className="form-control input-fields"
+                        id="input-text-align" />
                     </div>
                     <br />
                     <div className="row">
@@ -78,11 +86,11 @@ class body extends React.Component {
                         <Label>Date</Label>
                         <div className="input-fields">
                           <img src={Dicon} class="svg-color" />
-                          {/*   */}
                           <Input
-                            type="date"
-                            className="form-control input-fields " />
-                          <image src={DNicon} />
+                            type="text"
+                            className="form-control input-fields  "
+                            id="input-text-align"
+                          />
                         </div>
                       </Col>
                       <Col md={3}>
@@ -90,8 +98,9 @@ class body extends React.Component {
                         <div className="input-fields">
                           <img src={Ticon} />
                           <Input
-                            type="time"
+                            type="text"
                             className="form-control input-fields"
+                            id="input-text-align"
                           />
                         </div>
                       </Col>
@@ -125,7 +134,8 @@ class body extends React.Component {
                         <div className="input-fields">
                           <img src={Dicon} />
                           <Input
-                            type="date" className="form-control input-fields" />
+                            type="text" className="form-control input-fields"
+                            id="input-text-align" />
                         </div>
                       </Col>
                       <Col md={3}>
@@ -134,7 +144,8 @@ class body extends React.Component {
                         <div className="input-fields">
                           <img src={Ticon} />
                           <Input
-                            type="time" className="form-control input-fields" />
+                            type="text" className="form-control input-fields"
+                            id="input-text-align" />
                         </div>
                       </Col>
                       <Col md={2}>

@@ -1,3 +1,5 @@
+@import "variables.scss";
+@import "mixins.scss";
 
 .row{
     display: flex;
@@ -8,14 +10,14 @@
     color:#ECB400;
     padding-left: 30px;
     padding-right: 180px;
-    font-style: italic;
-   
+    font-style: italic; 
 }
-
 .formgroup{
     margin-left: -15px;
 }
-
+#header{
+    box-shadow: 0px 3px 3px 0px #ccc;
+}
 .header-content{
     align-self: center;
     color: black;
@@ -51,12 +53,14 @@
  .image-container{
       width: 643px;
  }
+ #input-text-align{
+     padding-left: 20px !important;
+    
+ }
 
 .input-fields{
     width: 100%;
-    background-color: #F6F6F6 !important;
-    
-   
+    background-color: #F6F6F6 !important;   
 }
 .input-fields img { 
     position: absolute;
@@ -64,9 +68,11 @@
     padding-top: 11px;
     padding-left: 4px;
 }
-
+.color {
+    padding: 10px 10px 10px 5px !important;
+}
 a:link {
-    color:black;
+    color:black !important;
     background-color: none;
     text-decoration: none;
 }
@@ -84,104 +90,37 @@ a:hover {
     box-shadow: 0px 3px 3px 0px #ccc;
     background-color: #FFFFFF;
     border: none;
-   padding: 6px;
-   
+   padding: 6px;  
 }
 button:hover{
     font-weight: bold;
 }
 
-@media screen  and (max-width:420px){
+
+@media  screen  and (max-width:450px){
     h2{
-        font-size: 25px;
+        font-size: large;
     }
     h5{
         font-size: small;
     }
     .logo{
-        font-size: 35px;
+        /* font-size: 35px; */
         color:#ECB400;  
-        padding-right: 130px;  
-    }
-    .row{
-        display: flex;
-        flex-wrap: wrap;            
-    }
-    .header-container{
-        width: auto;
-        box-shadow: 1px 2px 2px 1px #ccc;        
-  }  
-    .header-content{
-        align-self: right;
-        color: black;
-        padding-right: 3px; 
-        font-size: small;
-    }
-    
-    a:link {
-        color:black;
-        background-color: none;
-        text-decoration: none;
-    }
-      a:hover {
-        color:black !important;
-        text-decoration: none !important; 
-        font-weight: bold !important;
-    }
-    
-    .input-fields{
-        background-color: #F6F6F6 !important;
-        border-radius: none !important;        
-    }
-    .search-button{
-        width: 186px;
-        background-color: #ECB400;
-        color: white;
-        border: none;
-        border-radius: 2px;
-        height: 35px;
-        font-size: 15px;
-        text-align: center;
-    }
-    .image-container{
-        width: 340px;
-   }
-   .body-container{
-    font-size: medium; 
-}
-.location-change{
-    position: absolute;
-    left: 260px;
-    width: 22px;
-    box-shadow: 0px 3px 3px 0px #ccc;
-    background-color: #FFFFFF;
-    border: none;
-   padding: 2px;
-   margin-top: -6px;
-}
-.menu-items{
-    text-align: center;
-    box-shadow: 0px 3px 3px 0px #ccc;
-    background-color:#ECB400 ;
-    margin-left: 130px;
-   width: 200px;
-}
-  
-  }
-  @media  screen  and (max-width:450px){
-    .logo{
-        font-size: 35px;
-        color:#ECB400;  
-        padding-right: 180px;  
+        /* padding-right: 180px;   */
     }
     .location-change{
-        position: absolute;
-        left: 300px;
+        position: relative;
+        left: 130px;
         width: 22px;
         box-shadow: 0px 3px 3px 0px #ccc;
         background-color: #FFFFFF;
         border: none;
        padding: 2px;
-       margin-top: -6px;
+       margin-top: 6px;
+       margin-bottom: -16px;
+    }
+    .image-container{
+        width: 383px;
     }
   }
